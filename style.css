@@ -68,13 +68,20 @@ html, body
     color: #000;
 }
 
-h1{
+/*h1{
     font-family: Arial, helvetica, sans-serif;
-    /*color: #737373;*/
+    color: #737373;
     color: #000;
     font-style: italic;
     letter-spacing: 1.5px;
-}
+}*/
+
+#colorchange {
+	color: black;
+	font-family: Arial, helvetica, sans-serif;
+	font-style: italic;
+	letter-spacing: 1.5px;
+}  
 
 p.block
 {
@@ -88,6 +95,19 @@ p.block
 a { 
     color: inherit; 
     text-decoration: none;
+}
+
+/*LINE*/
+
+hr
+{
+  margin-top: 17px;
+  margin-bottom: 17px;
+  height: 1px;
+  border-width: 0px;
+  width: 100%;
+  position: relative;
+  background-color: black;
 }
 
 /* LINKS */

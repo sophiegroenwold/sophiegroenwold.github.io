@@ -3,15 +3,21 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="style.css">
-        <script type="text/javascript" src="script.js"></script>
+
         <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
     </head>
 
     <body>
+
         <div class = "container">
             <div class = "intro">
                  <title>Sophie Groenwold</title>
-                    <h1><a href = "http://sophiegroenwold.github.io">Sophie Groenwold</a></h1>
+
+                    <h1 id = "colorchange" onclick = "changeColor">
+                        <a href = "http://sophiegroenwold.github.io">Sophie Groenwold</a>
+                    </h1>
+
+                    <hr noshade>
 
                     <p class = "block"> I'm a Regent's scholar at <cpos class="highlight" data-idcpos="10" data-comment="1">
                     UC Santa Barbara,</cpos> where I'm in my second year studying 
@@ -27,6 +33,27 @@
                  </p>
             </div>
         </div>
+
+        <script>
+                function getRandomColor() {
+                     var letters = '0123456789ABCDEF';
+                     var color = '#';
+                     for (var i = 0; i < 6; i++ ) {
+                         color += letters[Math.floor(Math.random() * 16)];
+                     }
+                     return color;
+                 }
+     
+                 var div = document.getElementById( 'colorchange' );
+                 div.onmouseover = function() {
+                     this.style.color = getRandomColor();
+                     var h2s = this.getElementsByTagName( 'div' );
+                 };
+     
+                 div.onmouseout = function() {
+                     this.style.color = 'black';
+                 }; 
+        </script>
 
         <div class = "container2">
             
