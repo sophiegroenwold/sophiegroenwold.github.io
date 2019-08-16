@@ -97,6 +97,11 @@ a {
     text-decoration: none;
 }
 
+a.link:hover
+{
+	color: #000;
+}
+
 /*LINE*/
 
 hr
