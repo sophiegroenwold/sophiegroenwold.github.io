@@ -12,6 +12,11 @@ body {
 	}
 }
 
+h1
+{
+    text-align: center;
+}
+
 .container
 {
     width: 100%;
@@ -34,7 +39,7 @@ hr.new {
 
 .intro
 {
-    width: 500px;
+    width: 440px;
     height: 200px;
     align-content: center;
 }
