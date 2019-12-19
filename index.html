@@ -4,11 +4,40 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="scripts/secrets.js"></script>
 
         <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+        
     </head>
 
     <body>
+
+        <script>
+            var myApiKey = secrets.apiKey;
+            var myUsername = secrets.username;
+            
+            const request = new XMLHttpRequest();
+
+            request.open('GET', 'http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user='+myUsername+'&api_key='+myApiKey+'&format=json');
+            request.send(); 
+            
+            request.onload = () => {
+                if (request.status === 200) {
+                    console.log("success"); 
+                
+                    //Extracting data
+                    var song = JSON.parse(request.response).recenttracks.track[0].name;
+                    var artist = JSON.parse(request.response).recenttracks.track[0].artist["#text"];
+                    
+                    document.getElementById("mySong").innerHTML = song;
+                    document.getElementById("myArtist").innerHTML = artist;
+                } 
+            };
+            
+            request.onerror = () => {
+                console.log("error")
+            };
+        </script>
 
         <div class = "container">
             <div class = "intro">
@@ -109,10 +138,14 @@
                         style = "width:30px; height: 30px; margin: 15px;">
                     <a class = "bottom" href="mailto:sophiegroenwold@ucsb.edu" target = "_blank">
                         <img border="0" alt="Email" src="images/gmailHover.png" 
-                        style = "width:30px; height: 30px; margin: 15px;"></a>
+                        style = "width:30px; height: 30px; margin: 15px;"></a><br>
                 </div>
             </div>
-        
+                    
         </div>
+
+        <p class = "music"><img src="images/music.gif" alt="musicGif"/> &nbsp;&nbsp; <span id = "mySong"></span>&nbsp;by&nbsp;<span id = "myArtist"></span></p>
+
+
     </body>
 </html>
