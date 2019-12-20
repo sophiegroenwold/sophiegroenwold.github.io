@@ -28,6 +28,16 @@
                     //Extracting data
                     var song = JSON.parse(request.response).recenttracks.track[0].name;
                     var artist = JSON.parse(request.response).recenttracks.track[0].artist["#text"];
+
+                    var playing;
+                    if (JSON.parse(request.response).recenttracks.track[0]["@attr"]) playing = true;
+                    else playing = false;
+                    if (playing) {
+                        document.getElementById("songContainer").style.display = "block"; 
+                    }
+                    else {
+                        document.getElementById("songContainer").style.display = "none";
+                    }
                     
                     document.getElementById("mySong").innerHTML = song;
                     document.getElementById("myArtist").innerHTML = artist;
@@ -144,8 +154,9 @@
                     
         </div>
 
-        <p class = "music"><img src="images/music.gif" alt="musicGif"/> &nbsp;&nbsp; <span id = "mySong"></span>&nbsp;by&nbsp;<span id = "myArtist"></span></p>
-
+        <span id = "songContainer">
+            <p class = "music"><img src="images/music.gif" alt="musicGif"/> &nbsp;&nbsp; <span id = "mySong"></span>&nbsp;by&nbsp;<span id = "myArtist"></span></p>
+        </span>
 
     </body>
 </html>

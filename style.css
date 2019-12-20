@@ -17,6 +17,11 @@ h1
     text-align: center;
 }
 
+#songPlaying 
+{
+    display: none;
+}
+
 #mySong
 {
     font-style: italic;
