@@ -7,10 +7,22 @@ body {
 @media only screen and (max-width: 400px) {
 	body {
         margin: 2em auto;
-        padding: 10% 10% 10% 10%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 10%;
         color: rgb(55, 53, 47);
         line-height: 1;
-	}
+    }
+    
+    .container
+    {
+        width: 100%;
+        margin-top: 13%;
+        margin-bottom: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 h1
