@@ -6,7 +6,10 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <script type="text/javascript" src="scripts/secrets.js"></script>
 
-        <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
         
     </head>
 
@@ -54,37 +57,95 @@
                  <title>Sophie Groenwold</title>
 
                     <h1 id = "colorchange" onclick = "changeColor">
-                        <a href = "http://sophiegroenwold.github.io">Sophie Groenwold</a>
+                        <a class = "nounderline" href = "http://sophiegroenwold.github.io">Sophie Groenwold</a>
+                        
+                        <div class = "container2">
+
+                            <!-- <a class = "nounderline" href = "http://sophiegroenwold.github.io">Sophie Groenwold</a> -->
+            
+                            <div class = "linksContainer1">
+                                <div id = "crossFade">
+                                    <img class = "top" alt = "Github" src="images/github.png" 
+                                        style = "width:20px; height: 20px; margin: 15px;">
+                                    <a class = "bottom" href="https://github.com/sophiegroenwold" target = "_blank">
+                                        <img border="0" alt="GitHub" src="images/githubHover.png" 
+                                        style = "width:20px; height: 20px; margin: 15px;"></a>
+                                </div>
+                            </div>
+                
+                            <div class = "linksContainer2">
+                                <div id = "crossFade">
+                                    <img class="top" alt="Facebook" src="images/facebook.png" 
+                                        style = "width:20px; height: 20px; margin: 15px;">
+                                    <a class = "bottom" href="https://www.facebook.com/sophie.groenwold" target = "_blank">
+                                        <img border="0" alt="Facebook" src="images/facebookHover.png" 
+                                        style = "width:20px; height: 20px; margin: 15px;"></a>
+                                </div>
+                            </div>
+                        
+                            <div class = "linksContainer3">
+                                <div id = "crossFade">
+                                    <img class = "top" alt="Linkedin" src="images/linkedin.png" 
+                                        style = "width:20px; height: 20px; margin: 15px;">
+                                    <a class = "bottom" href="https://www.linkedin.com/in/sophiegroenwold/" target = "_blank">
+                                        <img border="0" alt="Linkedin" src="images/linkedinHover.png" 
+                                        style = "width:20px; height: 20px; margin: 15px;"></a>
+                                </div>
+                            </div>
+                
+                            <div class = "linksContainer4">
+                                <div id = "crossFade">
+                                    <img class = "top" alt="Email" src="images/gmail.png" 
+                                        style = "width:20px; height: 20px; margin: 15px;">
+                                    <a class = "bottom" href="mailto:sophiegroenwold@ucsb.edu" target = "_blank">
+                                        <img border="0" alt="Email" src="images/gmailHover.png" 
+                                        style = "width:20px; height: 20px; margin: 15px;"></a><br>
+                                </div>
+                            </div>
+                                    
+                        </div>
+
+                        <hr class = "new" noshade>
+
                     </h1>
 
-                    <hr class = "new" noshade>
-
                     <p class = "block">I'm a Regent's scholar at UC Santa Barbara, 
-                        where I'm in my second year studying Computer Science.</p>
+                        where I'm in my second year pursuing a B.S. in Computer Science.</p>
 
                     <!-- 
                         note: to highlight text, use <cpos class="highlight" data-idcpos="10" data-comment="1"></cpos>
                     -->
 
                     <p class = "block">
-                        <i><font color = "black">I'm also currently </font></i><br>
+                        I'm also currently:
                     </p>
                     <p class = "block">
-                        &nbsp; » part of the <a class = link target = "_blank" href = "http://nlp.cs.ucsb.edu/">UCSB NLP Group</a> through
+                        &nbsp; <small>></small> part of the <a class = link target = "_blank" href = "http://nlp.cs.ucsb.edu/">UCSB NLP Group</a> through
                         <a class = link target = "_blank" href = "https://sites.google.com/site/erspucsb/">
                         CS ERSP</a><br>
                     </p>
                     <p class = "block">
-                        &nbsp; » the External VP & Outreach Chair of 
+                        &nbsp; <small>></small> the External VP & Outreach Chair of 
                            <a class = link target = "_blank" href = "https://ucsbswe.weebly.com/">UCSB SWE</a> <br>
                     </p>
                     <p class = "block">
-                        &nbsp; » part of the Marketing Team for 
+                        &nbsp; <small>></small> part of the Marketing Team for 
                            <a class = link target = "_blank" href = "https://www.womxnhacks.com/">Womxn/Hacks</a> <br>
                     </p>
+
+                    <div class = "lowBlock">
                  
-                    <p class = "block">// <a class = link target = "_blank" href = "resume.pdf">
-                        resume</a></p>
+                        <div class = "resume">
+                            //  <a class = link target = "_blank" href = "resume.pdf">resume</a>
+                        </div>
+
+                        <div class = "songUpperContainer">
+                            <span id = "songContainer">
+                                <span id = "mySong"></span>&nbsp;by&nbsp;<span id = "myArtist"></span>&nbsp;&nbsp; <img src="images/music.gif" alt="musicGif"/>
+                            </span>
+                        </div>
+                    
+                    </div>
 
             </div>
         </div>
@@ -109,54 +170,6 @@
                      this.style.color = 'black';
                  }; 
         </script> -->
-
-        <div class = "container2">
-            
-            <div class = "linksContainer1">
-                <div id = "crossFade">
-                    <img class = "top" alt = "Github" src="images/github.png" 
-                        style = "width:30px; height: 30px; margin: 15px;">
-                    <a class = "bottom" href="https://github.com/sophiegroenwold" target = "_blank">
-                        <img border="0" alt="GitHub" src="images/githubHover.png" 
-                        style = "width:30px; height: 30px; margin: 15px;"></a>
-                </div>
-            </div>
-
-            <div class = "linksContainer2">
-                <div id = "crossFade">
-                    <img class="top" alt="Facebook" src="images/facebook.png" 
-                        style = "width:30px; height: 30px; margin: 15px;">
-                    <a class = "bottom" href="https://www.facebook.com/sophie.groenwold" target = "_blank">
-                        <img border="0" alt="Facebook" src="images/facebookHover.png" 
-                        style = "width:30px; height: 30px; margin: 15px;"></a>
-                </div>
-            </div>
-        
-            <div class = "linksContainer3">
-                <div id = "crossFade">
-                    <img class = "top" alt="Linkedin" src="images/linkedin.png" 
-                        style = "width:30px; height: 30px; margin: 15px;">
-                    <a class = "bottom" href="https://www.linkedin.com/in/sophiegroenwold/" target = "_blank">
-                        <img border="0" alt="Linkedin" src="images/linkedinHover.png" 
-                        style = "width:30px; height: 30px; margin: 15px;"></a>
-                </div>
-            </div>
-
-            <div class = "linksContainer4">
-                <div id = "crossFade">
-                    <img class = "top" alt="Email" src="images/gmail.png" 
-                        style = "width:30px; height: 30px; margin: 15px;">
-                    <a class = "bottom" href="mailto:sophiegroenwold@ucsb.edu" target = "_blank">
-                        <img border="0" alt="Email" src="images/gmailHover.png" 
-                        style = "width:30px; height: 30px; margin: 15px;"></a><br>
-                </div>
-            </div>
-                    
-        </div>
-
-        <span id = "songContainer">
-            <p class = "music"><img src="images/music.gif" alt="musicGif"/> &nbsp;&nbsp; <span id = "mySong"></span>&nbsp;by&nbsp;<span id = "myArtist"></span></p>
-        </span>
 
     </body>
 </html>

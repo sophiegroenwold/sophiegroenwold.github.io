@@ -3,14 +3,26 @@ body {
 	margin: 0;
     padding: 0;
     max-height: 70%;
+    background-color: rgb(252, 252, 252);
+    animation: fadeInAnimation ease 1s 
 }
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+}
+
 @media only screen and (max-width: 400px) {
 	body {
         margin: 2em auto;
         padding-left: 10%;
         padding-right: 10%;
         padding-bottom: 10%;
-        color: rgb(55, 53, 47);
+        color: black;
         line-height: 1;
     }
     
@@ -36,14 +48,14 @@ body {
         width: 100%;
         margin-top: 10vh;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: right;
+        justify-content: right;
     }
 }
 
 h1
 {
-    text-align: center;
+    text-align: left;
 }
 
 #songPlaying 
@@ -54,6 +66,27 @@ h1
 #mySong
 {
     font-style: italic;
+}
+
+.lowBlock
+{
+    margin-top: 20px;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    color:black;
+    letter-spacing: 0.6px;
+    font-size: 80%;
+}
+
+.resume
+{
+    float: left;
+    margin-bottom: 10px;
+}
+
+.songUpperContainer
+{
+    float: right; 
 }
 
 .container
@@ -79,50 +112,55 @@ hr.new {
 
 .intro
 {
-    width: 440px;
-    height: 200px;
+    width: 575px;
     align-content: center;
 }
 
 .container2
 {
-    width: 100%;
-    margin-top: 11%;
+    width: 140px;
+    /* margin-top: 11%; */
     display: flex;
-    align-items: center;
-	justify-content: center;
+    align-items: right;
+    justify-content: right;
+    float: right;
 }
+
 
 .linksContainer1
 {
-    width: 60px;
-	height: 70px;
+    width: 35px;
+    /* height: 10px; */
     align-items: center;
     justify-content: center;
+    float: right;
 }
 
 .linksContainer2
 {
-	width: 60px;
-	height: 70px;
-    align-items: center;
-    justify-content: center;
+    width: 35px;
+    /* height: 10px; */
+    align-items: right;
+    justify-content: right;
+    float: right;
 }
 
 .linksContainer3
 {
-	width: 60px;
-	height: 70px;
-    align-items: center;
-    justify-content: center;
+	width: 35px;
+	/* height: 10px; */
+    align-items: right;
+    justify-content: right;
+    float: right;
 }
 
 .linksContainer4
 {
-	width: 60px;
-	height: 70px;
-    align-items: center;
-    justify-content: center;
+    width: 35px;
+	/* height: 10px; */
+    align-items: right;
+    justify-content: right;
+    float: right;
 }
 
 .highlight:hover
@@ -132,26 +170,26 @@ hr.new {
 
 #colorchange {
 	color: black;
-	font-family: Arial, helvetica, sans-serif;
-	letter-spacing: 1.5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 0.6px;
+    /* height: 3em; */
 }  
 
 p.block
 {
-    font-weight: lightest;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    padding-top: 1.6px;
-    padding-bottom: 1.6px;
-    letter-spacing: 0.6px;
-    line-height: 23px;
-    color:rgb(55, 53, 47);
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 2px;
+    letter-spacing: 0.01%;
+    transform:scale(1,0.95);
+    /* line-height: 23px; */
+    color:black;
 }
 
 p.music {
-    font-weight: lightest;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";    margin-top: 0.5em;
-    color:rgb(55, 53, 47);
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    color:black;
     letter-spacing: 0.6px;
     width: 100%;
 	margin-bottom: 10%;
@@ -160,15 +198,26 @@ p.music {
     justify-content: center;
 }
 
+a.nounderline {
+    color: inherit;
+    border-bottom-style: none;
+}
+
 a { 
     color: inherit; 
     text-decoration: none;
+    border-bottom: 1px solid #D1D0D1;
+    color: #8A8A8A;
 }
 
 a.link:hover
 {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
     color: #000;
-    text-decoration: underline;
 }
 
 /*LINE*/
@@ -199,13 +248,28 @@ hr
 }
 
 #crossFade img.top:hover {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
 	opacity:0;
 }
 
 #crossFade a.bottom:link {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
 	opacity:0;
 }
 
 #crossFade a.bottom:hover {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
 	opacity:100;
 }
