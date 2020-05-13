@@ -170,19 +170,22 @@ hr.new {
 
 #colorchange {
 	color: black;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 100;
     letter-spacing: 0.6px;
     /* height: 3em; */
 }  
 
 p.block
 {
-    font-family: 'Work Sans', sans-serif;
-    margin-bottom: 2px;
-    letter-spacing: 0.01%;
+    /* font-family: 'Work Sans', sans-serif; */
+    font-weight: bolder;
+    line-height: 150%;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0.1%;
+    letter-spacing: 0.6px;
     transform:scale(1,0.95);
-    /* line-height: 23px; */
     color:black;
 }
 
