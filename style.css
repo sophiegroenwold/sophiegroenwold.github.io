@@ -111,7 +111,7 @@ h2
 .container
 {
     width: 100%;
-    margin-top: 13%;
+    margin-top: 12%;
 	/* height: 100%; */
 	margin-bottom: 10%;
     display: flex;
@@ -319,4 +319,25 @@ hr
     -webkit-transition:.5s;
     transition:.5s;
 	opacity:100;
+}
+
+/* TOGGLE STYLING */
+
+input
+{
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+#toggleInfo
+{
+    font-weight: bolder;
+    line-height: 150%;
+    margin-left: 5.5%;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.6px;
+    transform:scale(1,0.95);
+    color:black;
 }

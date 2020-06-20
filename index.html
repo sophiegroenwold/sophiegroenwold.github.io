@@ -16,6 +16,9 @@
 
     <body>
 
+        <!-- for use with toggle -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
         <script>
             var myApiKey = secrets.apiKey;
             var myUsername = secrets.username;
@@ -58,12 +61,12 @@
                  <title>Sophie Groenwold</title>
 
                     <h1 id = "colorchange" onclick = "changeColor">
-                        <a class = "nounderline" href = "http://sophiegroenwold.github.io">Sophie Groenwold</a>
+                        <a class = "nounderline" href = "http://sophiegroenwold.com">Sophie Groenwold</a>
+
+                        <!-- BEGIN LINKS  -->
                         
                         <div class = "container2">
 
-                            <!-- <a class = "nounderline" href = "http://sophiegroenwold.github.io">Sophie Groenwold</a> -->
-            
                             <div class = "linksContainer1">
                                 <div id = "crossFade">
                                     <img class = "top" alt = "Github" src="images/github.png" 
@@ -110,6 +113,8 @@
 
                     </h1>
 
+                    <!-- BEGIN DESCRIPTION -->
+
                     <p class = "block">I'm a Regent's scholar at UC Santa Barbara, 
                         where I'm a rising third year pursuing a B.S. in Computer Science.</p>
 
@@ -117,29 +122,48 @@
                         In my free time, I dance and read (& add books to my <a class = link href="bookshelf.html" target="_self">bookshelf</a>).
                     </p>
 
-                    <!-- 
-                        note: to highlight text, use <cpos class="highlight" data-idcpos="10" data-comment="1"></cpos>
-                    -->
+                    <!-- BEGIN CURRENTLIES -->
 
                     <p class = "block">
                         I'm also currently:
                     </p>
 
-                    </p>
                     <p class = "block">
-                        &nbsp; <small>></small> a Web Development Intern at 
+                        &nbsp; <input id = "toggleButton1" type="button" onclick="toggle(this.id)" value="•"></input> a Web Development Intern at 
                         <a class = link target = "_blank" href = "https://www.guardianlife.com/careers/corporate/internships">Guardian Life</a>
                     </p>
+                    
+                    <div id = "toggleInfo">
+                        <div id = "toggleInfo1">
+                            I'm exploring web development through an Agile lens by utilizing SAFe (Scaled Agile Framework).
+                        </div>
+                    </div>
 
                     <p class = "block">
-                        &nbsp; <small>></small> part of the <a class = link target = "_blank" href = "http://nlp.cs.ucsb.edu/">UCSB NLP Group</a> through
+                        &nbsp; <input id = "toggleButton2" type="button" onclick="toggle(this.id)" value="•"></input> part of the <a class = link target = "_blank" href = "http://nlp.cs.ucsb.edu/">UCSB NLP Group</a> through
                         <a class = link target = "_blank" href = "https://sites.google.com/site/erspucsb/">
                         CS ERSP</a>
-                        <!-- <br> My group and I are currently investigating the performance of NLP models on different types of language. -->
                     </p>
+
+                    <div id = "toggleInfo">
+                        <div id = "toggleInfo2">
+                            I'm analyzing the efficacy of state-of-the-art NLP technologies on variations of language, with a focus on
+                            Transformer-based models.
+                        </div>
+                    </div>
+
                     <p class = "block">
-                        &nbsp; <small>></small> the External Vice President of 
-                           <a class = link target = "_blank" href = "https://ucsbswe.weebly.com/">UCSB SWE</a>
+                        &nbsp; <input id = "toggleButton3" type="button" onclick="toggle(this.id)" value="•"></input> the External Vice President of 
+                           <a class = link target = "_blank" href = "https://ucsbswe.weebly.com/">UCSB Society of Women Engineers</a>
+                    </p>
+
+                    <div id = "toggleInfo">
+                        <div id = "toggleInfo3">
+                            I'm SWE's point of reference for professional communications, and I organize our annual Evening with Industry.
+                        </div>
+                    </div>
+
+                    <!-- BEGIN RESUME & SONG PLAYER -->
 
                     <div class = "lowBlock">
                  
@@ -158,26 +182,49 @@
             </div>
         </div>
 
-        <!-- <script>
-                function getRandomColor() {
-                     var letters = '0123456789ABCDEF';
-                     var color = '#';
-                     for (var i = 0; i < 6; i++ ) {
-                         color += letters[Math.floor(Math.random() * 16)];
-                     }
-                     return color;
-                 }
-     
-                 var div = document.getElementById( 'colorchange' );
-                 div.onmouseover = function() {
-                     this.style.color = getRandomColor();
-                     var h2s = this.getElementsByTagName( 'div' );
-                 };
-     
-                 div.onmouseout = function() {
-                     this.style.color = 'black';
-                 }; 
-        </script> -->
+        <script>
+
+            function toggle(button_id) {
+                // var x = document.getElementById(id);
+
+                // if (x.style.display === "none") 
+                // {
+                //     x.style.display = "block";
+                // } 
+
+                // else 
+                // {
+                //     x.style.display = "none";
+                // }
+
+                var elem = document.getElementById(button_id);
+                if (elem.value=="•") elem.value = "◦";
+                else elem.value = "•";
+            }
+        </script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#toggleInfo1').hide();
+                $('#toggleButton1').on('click', function() {
+                        $('#toggleInfo1').slideToggle(300);
+                });
+            });
+
+            $(document).ready(function() {
+                $('#toggleInfo2').hide();
+                $('#toggleButton2').on('click', function() {
+                        $('#toggleInfo2').slideToggle(300);
+                });
+            });
+
+            $(document).ready(function() {
+                $('#toggleInfo3').hide();
+                $('#toggleButton3').on('click', function() {
+                        $('#toggleInfo3').slideToggle(300);
+                });
+            });
+        </script>
 
     </body>
 </html>
