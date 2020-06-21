@@ -185,18 +185,6 @@
         <script>
 
             function toggle(button_id) {
-                // var x = document.getElementById(id);
-
-                // if (x.style.display === "none") 
-                // {
-                //     x.style.display = "block";
-                // } 
-
-                // else 
-                // {
-                //     x.style.display = "none";
-                // }
-
                 var elem = document.getElementById(button_id);
                 if (elem.value=="•") elem.value = "◦";
                 else elem.value = "•";
@@ -204,6 +192,10 @@
         </script>
 
         <script type="text/javascript">
+            $(document).ready(function() {
+                $('#songContainer').hide();
+            });
+
             $(document).ready(function() {
                 $('#toggleInfo1').hide();
                 $('#toggleButton1').on('click', function() {
