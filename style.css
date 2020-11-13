@@ -60,7 +60,7 @@ h1
 
 h2
 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: Arial, Helvetica, sans-serif; 
     font-weight: 100;
     letter-spacing: 0.6px;
     font-size: 120%;
@@ -80,8 +80,8 @@ h2
 .lowBlock
 {
     margin-top: 20px;
-    font-weight: bolder;
-    font-family: 'Roboto', sans-serif;
+    /* font-weight: bolder; */
+    font-family: Arial, Helvetica, sans-serif;     
     color:black;
     letter-spacing: 0.6px;
     font-size: 80%;
@@ -101,8 +101,8 @@ h2
 .date
 {
     display: inline; 
-    font-weight: bolder; 
-    font-family: 'Roboto', sans-serif; 
+    /* font-weight: bolder;  */
+    font-family: Arial, Helvetica, sans-serif;     
     color:black; 
     letter-spacing: 0.4px; 
     font-size: 50%;
@@ -190,7 +190,7 @@ hr.new {
 #colorchange {
 	color: black;
     /* font-family: 'Roboto', sans-serif; */
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 100;
     letter-spacing: 0.6px;
 }  
@@ -198,21 +198,21 @@ hr.new {
 p.block
 {
     /* font-family: 'Work Sans', sans-serif; */
-    font-weight: bolder;
+    font-weight: 80%;
     line-height: 150%;
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, Helvetica, sans-serif; 
     margin-bottom: 0.1%;
-    letter-spacing: 0.6px;
-    transform:scale(1,0.95);
+    letter-spacing: 0.4px;
+    transform:scale(1,0.98);
     color:black;
 }
 
 p.block2
 {
     /* font-family: 'Work Sans', sans-serif; */
-    font-weight: bolder;
+    /* font-weight: bolder; */
     line-height: 150%;
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;     
     margin-top: -2%;
     margin-bottom: 0.1%;
     letter-spacing: 0.6px;
@@ -223,9 +223,9 @@ p.block2
 p.block3
 {
     /* font-family: 'Work Sans', sans-serif; */
-    font-weight: bolder;
+    /* font-weight: bolder; */
     line-height: 150%;
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;     
     margin-top: 0%;
     margin-bottom: 0.1%;
     letter-spacing: 0.6px;
@@ -234,10 +234,10 @@ p.block3
 }
 
 p.music {
-    font-weight: bolder;
-    font-family: 'Roboto', sans-serif;
+    /* font-weight: bolder; */
+    font-family: Arial, Helvetica, sans-serif;     
     color:black;
-    letter-spacing: 0.6px;
+    letter-spacing: 0.5px;
     width: 100%;
 	margin-bottom: 10%;
     display: flex;
@@ -333,10 +333,10 @@ input
 
 #toggleInfo
 {
-    font-weight: bolder;
+    /* font-weight: bolder; */
     line-height: 150%;
     margin-left: 5.5%;
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, Helvetica, sans-serif; 
     letter-spacing: 0.6px;
     transform:scale(1,0.95);
     color:black;
