@@ -6,7 +6,6 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <script type="text/javascript" src="scripts/secrets.js"></script>
 
-        <!-- <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet"> -->
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -118,7 +117,7 @@
                     <p class = "block">Hi! I'm Sophie, a student at UC Santa Barbara, where I'm in my third year studying computer science. 
                         Lately, I've been wfh out of Los Angeles, CA.</p>
 
-                    <p class = "block">I'm interested exploring the intersection of computer science with language and design; check out 
+                    <p class = "block">I'm interested exploring the intersection of CS with language and design; check out 
                         my <a class = link target = "_blank" href = "resume.pdf">resume</a>.
                         <!-- <a class = link href="bookshelf.html" target="_self">bookshelf</a>). -->
                     </p>
@@ -129,106 +128,51 @@
                         I'm also currently
                     </p>
 
-                    <p class = "block">
-                        • working with my team in the <a class = link target = "_blank" href = "http://nlp.cs.ucsb.edu/">UCSB NLP Group</a> on 
+                    <ul>
+                        <li>
+                        working with my team in the <a class = link target = "_blank" href = "http://nlp.cs.ucsb.edu/">UCSB NLP Group</a> on 
                         computational social science issues.  Our <a class = link target = "_blank" href = "https://www.aclweb.org/anthology/2020.emnlp-main.473/">work</a>
                         was recently accepted to EMNLP 2020!
-                    </p>
+                        </li>
+                    </ul>
 
-                    <!-- <p class = "block">
-                        &nbsp; <input id = "toggleButton1" type="button" onclick="toggle(this.id)" value="•"></input> a Web Development Intern at 
-                        <a class = link target = "_blank" href = "https://www.guardianlife.com/careers/corporate/internships">Guardian Life</a>
-                    </p>
-                    
-                    <div id = "toggleInfo">
-                        <div id = "toggleInfo1">
-                            I'm collaborating with developers and Agile Release Train (ART) engineers to explore software development from both programming and project management perspectives.
-                        </div>
-                    </div>
+                    <ul>
+                        <li>
+                        supporting womxn in STEM with the <a class = link target = "_blank" href = "https://ucsbswe.weebly.com/">UCSB Society of Women Engineers</a>.
+                        As External VP, I connect our members with opportunities in industry.
+                        </li>
+                    </ul>
 
-                    <p class = "block">
-                        &nbsp; <input id = "toggleButton2" type="button" onclick="toggle(this.id)" value="•"></input> part of the <a class = link target = "_blank" href = "http://nlp.cs.ucsb.edu/">UCSB NLP Group</a>
-                    </p>
-
-                    <div id = "toggleInfo">
-                        <div id = "toggleInfo2">
-                            I'm analyzing the efficacy of state-of-the-art NLP technologies on variations of language, with a focus on
-                            Transformer-based models.
-                            <br><br>
-                            I'm also preparing for EMNLP 2020, where my team's work "Investigating African-American Vernacular English in Transformer-Based Text Generation" will appear.
-                        </div>
-                    </div>
-
-                    <p class = "block">
-                        &nbsp; <input id = "toggleButton3" type="button" onclick="toggle(this.id)" value="•"></input> the External Vice President of 
-                            <a class = link target = "_blank" href = "https://ucsbswe.weebly.com/">UCSB Society of Women Engineers</a>
-                    </p>
-
-                    <div id = "toggleInfo">
-                        <div id = "toggleInfo3">
-                            I'm SWE's point of reference for professional communications, and I organize our annual Evening with Industry.
-                        </div>
-                    </div> -->
+                    <span id = "songContainer">
+                        <ul>
+                            <li>
+                            listening to 
+                                <a class = link target = "_blank" href = "https://open.spotify.com/user/sophiegroenwold">
+                                    <span id = "mySong"></span>&nbsp;by&nbsp;<span id = "myArtist"></span>
+                                </a>
+                                &nbsp;
+                                <img src="images/music.gif" alt="musicGif"/>
+                            </li>
+                        </ul>
+                    </span>
 
                     <p class = "block">
                     In my free time, I dance (I was a ballet dancer for 10+ years!) and read memoirs, historical fiction, and crime novels
                         (or more accurately, add those books to my bookshelf). 
                     </p>
 
-                    <!-- BEGIN RESUME & SONG PLAYER -->
-
-                    <div class = "lowBlock">
-                 
-                        <div class = "resume">
-                            //  <a class = link target = "_blank" href = "resume.pdf">resume</a>
-                        </div>
-
-                        <div class = "songUpperContainer">
-                            <span id = "songContainer">
-                                <span id = "mySong"></span>&nbsp;by&nbsp;<span id = "myArtist"></span>&nbsp;&nbsp; <img src="images/music.gif" alt="musicGif"/>
-                            </span>
-                        </div>
-                    
-                    </div>
+                    <p class = "block">
+                        If you've read this far, reach out to say hello!
+                    </p>
 
             </div>
         </div>
-
-        <!-- <script>
-
-            function toggle(button_id) {
-                var elem = document.getElementById(button_id);
-                if (elem.value=="•") elem.value = "◦";
-                else elem.value = "•";
-            }
-        </script>
 
         <script type="text/javascript">
             $(document).ready(function() {
                 $('#songContainer').hide();
             });
-
-            $(document).ready(function() {
-                $('#toggleInfo1').hide();
-                $('#toggleButton1').on('click', function() {
-                        $('#toggleInfo1').slideToggle(300);
-                });
-            });
-
-            $(document).ready(function() {
-                $('#toggleInfo2').hide();
-                $('#toggleButton2').on('click', function() {
-                        $('#toggleInfo2').slideToggle(300);
-                });
-            });
-
-            $(document).ready(function() {
-                $('#toggleInfo3').hide();
-                $('#toggleButton3').on('click', function() {
-                        $('#toggleInfo3').slideToggle(300);
-                });
-            });
-        </script> -->
+        </script>
 
     </body>
 </html>
