@@ -209,6 +209,37 @@ hr
   background-color: black;
 }
 
+/* ENTRIES */
+
+.entry
+{
+    width: 100%;
+    margin-top: 5%;
+    display: inline-block;
+    /* background-color: blue; */
+}
+
+p.entry-title
+{
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 70;
+    line-height: 160%;
+    transform:scale(1,0.97);
+    float: left;
+}
+
+a.linknocolor {
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 70;
+    line-height: 160%;
+    transform:scale(1,0.97);
+    float: left;
+    /* temporary fix!! doesn't line up */
+    margin-top: 1em;
+}
+
 /* LINKS */
 
 #crossFade
