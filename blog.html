@@ -76,17 +76,60 @@
             <!-- BEGIN WRITING -->
             <h2>Blog</h2>
 
+            <p class = "block">
+                <button class = "filter" id = "all" onclick = "my_all()">all</button> 
+                / <button class = "filter" id = "essay" onclick = "essay()">essays</button>  
+                / <button class = "filter" id = "project" onclick = "project()">projects</button>  
+            </p>
+
             <div class = "entry">
-                <a class = "linknocolor" target = "_blank" href ="blog1.html">
-                    Children Should Not be the Target of Individualized Algorithms
-                </a>
-                <p class = "entry-tag">
-                    essay
+                <div class = "entry-container-1">
+                    <a class = "linknocolor" target = "_blank" href ="blog1.html">
+                        Children Should Not be the Target of Individualized Algorithms
+                    </a>
+                    <div class = "essay" id = "blog1">
+                        essay
+                    </div>
+                </div>
+
+                <div class = "entry-container-2">
+                    <a class = "linknocolor" target = "_blank" href ="blog1.html">
+                        This is another entry
+                    </a>
+                    <div class = "project" id = "blog2">
+                        project
+                    </div>
                 </div>
             </div>
 
+
         </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        function my_all() {
+            console.log("hi");
+            $(".entry-container-1").show();
+            $(".entry-container-2").show();
+        }
+
+        function hide_init(){
+            $(".entry-container-1").hide();
+            $(".entry-container-2").hide();
+        }
+
+        function essay() {
+            hide_init();
+            $(".entry-container-1").show();
+        }
+
+        function project() {
+            hide_init();
+            $(".entry-container-2").show();
+        }
+    </script>
 
     </body>
 </html>

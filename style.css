@@ -215,7 +215,6 @@ hr
 {
     width: 100%;
     margin-top: 5%;
-    display: inline-block;
     /* background-color: blue; */
 }
 
@@ -229,6 +228,48 @@ p.entry-title
     float: left;
 }
 
+.essay, .project
+{
+    font-family: Arial, sans-serif;
+    font-size: 70;
+    line-height: 160%;
+    transform:scale(1,0.97);
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 25px;
+    float: right;
+}
+
+.essay
+{
+    background-color: #C1D1A6;
+}
+
+.project
+{
+    background-color: #aaaaf3;
+}
+
+button.filter
+{
+    color: inherit; 
+    text-decoration: none;
+    color: #aaaaf3;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+button.filter:hover
+{
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+    color: #000;
+}
+
 a.linknocolor {
     color: black;
     font-family: Arial, sans-serif;
@@ -236,8 +277,6 @@ a.linknocolor {
     line-height: 160%;
     transform:scale(1,0.97);
     float: left;
-    /* temporary fix!! doesn't line up */
-    margin-top: 1em;
 }
 
 /* LINKS */
