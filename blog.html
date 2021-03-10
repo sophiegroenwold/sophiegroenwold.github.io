@@ -18,7 +18,7 @@
 
     <div class = "container">
         <div class = "intro">
-            <title>Sophie Groenwold</title>
+            <title>Blog / Sophie Groenwold</title>
 
             <h1 id = "colorchange" onclick = "changeColor">
                 <a class = "nounderline" href = "http://sophiegroenwold.com">Sophie Groenwold</a>
@@ -83,22 +83,29 @@
             </p>
 
             <div class = "entry">
-                <div class = "entry-container-1">
-                    <a class = "linknocolor" target = "_blank" href ="blog1.html">
-                        Children Should Not be the Target of Individualized Algorithms
-                    </a>
-                    <div class = "essay" id = "blog1">
-                        essay
-                    </div>
-                </div>
-
-                <div class = "entry-container-2">
-                    <a class = "linknocolor" target = "_blank" href ="blog1.html">
+                <div class = "entry-container-3">
+                    <a class = "linknocolor" href ="blog3.html">
                         Redditometer
                     </a>
-                    <div class = "project" id = "blog2">
+                    <!-- <div class = "project" id = "blog2">
                         project
-                    </div>
+                    </div> -->
+                </div>
+                <div class = "entry-container-2">
+                    <a class = "linknocolor" href ="blog2.html">
+                        The Dangers of Giving Systems of Artificial Intelligence Legal Personhood
+                    </a>
+                    <!-- <div class = "project" id = "blog2">
+                        project
+                    </div> -->
+                </div>
+                <div class = "entry-container-1">
+                    <a class = "linknocolor" href ="blog1.html">
+                        Children Should Not be the Target of Individualized Algorithms
+                    </a>
+                    <!-- <div class = "essay" id = "blog1">
+                        essay
+                    </div> -->
                 </div>
             </div>
 
@@ -123,11 +130,12 @@
         function essay() {
             hide_init();
             $(".entry-container-1").show();
+            $(".entry-container-2").show();
         }
 
         function project() {
             hide_init();
-            $(".entry-container-2").show();
+            $(".entry-container-3").show();
         }
     </script>
 
