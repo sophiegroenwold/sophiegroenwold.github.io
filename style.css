@@ -16,43 +16,6 @@ body {
      } 
 }
 
-@media only screen and (max-width: 400px) {
-	body {
-        margin: 2em auto;
-        padding-left: 10%;
-        padding-right: 10%;
-        padding-bottom: 10%;
-        color: black;
-        line-height: 1;
-    }
-    
-    .container
-    {
-        width: 100%;
-        margin-top: 13%;
-        margin-bottom: 10%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .intro
-    {
-        width: 100%;
-        height: 100%;
-        align-content: center;
-    }
-
-    .container2
-    {
-        width: 100%;
-        margin-top: 10vh;
-        display: flex;
-        align-items: right;
-        justify-content: right;
-    }
-}
-
 h1
 {
     text-align: left;
@@ -81,8 +44,9 @@ h2
 .container
 {
     width: 100%;
-    margin-top: 8%;
-	padding-bottom: 5em;
+    margin-top: 5%;
+	/* height: 100%; */
+	margin-bottom: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,54 +65,24 @@ hr.new {
 .intro
 {
     width: 575px;
-    align-content: center;
+    /* align-content: center; */
 }
 
 .container2
 {
     width: 140px;
-    /* margin-top: 11%; */
     display: flex;
-    align-items: right;
-    justify-content: right;
     float: right;
 }
 
 
-.linksContainer1
+.linksContainer1, .linksContainer2, .linksContainer3, .linksContainer4
 {
     width: 35px;
     /* height: 10px; */
-    align-items: center;
-    justify-content: center;
-    float: right;
-}
-
-.linksContainer2
-{
-    width: 35px;
-    /* height: 10px; */
-    align-items: right;
-    justify-content: right;
-    float: right;
-}
-
-.linksContainer3
-{
-	width: 35px;
-	/* height: 10px; */
-    align-items: right;
-    justify-content: right;
-    float: right;
-}
-
-.linksContainer4
-{
-    width: 35px;
-	/* height: 10px; */
-    align-items: right;
-    justify-content: right;
-    float: right;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* float: left; */
 }
 
 .highlight:hover
@@ -206,84 +140,6 @@ hr
   width: 100%;
   position: relative;
   background-color: black;
-}
-
-/* ENTRIES */
-
-.entry
-{
-    width: 100%;
-    margin-top: 5%;
-    /* background-color: blue; */
-}
-
-p.entry-title
-{
-    color: black;
-    font-family: Arial, sans-serif;
-    font-size: 70;
-    line-height: 160%;
-    transform:scale(1,0.97);
-    float: left;
-}
-
-.essay, .project
-{
-    font-family: Arial, sans-serif;
-    font-size: 70;
-    line-height: 160%;
-    transform:scale(1,0.97);
-    padding-left: 1em;
-    padding-right: 1em;
-    border-radius: 25px;
-    float: right;
-}
-
-.essay
-{
-    background-color: #C1D1A6;
-}
-
-.project
-{
-    background-color: #aaaaf3;
-}
-
-.entry-container-1, .entry-container-2, .entry-container-3
-{
-    padding-bottom: 2em;
-}
-
-button.filter
-{
-    color: inherit; 
-    text-decoration: none;
-    color: #aaaaf3;
-    /* background-color: blue; */
-    font-size: 70;
-    transform:scale(1,0.97);
-    border: none;
-    outline: none;
-    background-color: white;
-}
-
-button.filter:hover
-{
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s;
-    color: #000;
-}
-
-a.linknocolor {
-    color: black;
-    font-family: Arial, sans-serif;
-    font-size: 70;
-    line-height: 160%;
-    transform:scale(1,0.97);
-    float: left;
 }
 
 /* LINKS */
