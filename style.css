@@ -3,8 +3,8 @@ body {
 	margin: 0;
     padding: 0;
     max-height: 70%;
-    /* background-color: #F9F7F6; */
-    animation: fadeInAnimation ease 1s 
+    background-color: #282c34;
+    /* background-color: white; */
 }
 
 @keyframes fadeInAnimation { 
@@ -23,8 +23,6 @@ h1
 
 h2
 {
-	color: black;
-    font-family: Arial, sans-serif;
     font-weight: 100;
     font-size: larger;
     letter-spacing: 0.6px;
@@ -40,6 +38,11 @@ h2
     font-style: italic;
 }
 
+.music
+{
+    height: 15px;
+    width: 15px;
+}
 
 .container
 {
@@ -50,6 +53,7 @@ h2
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: fadeInAnimation ease 1s;
 }
 
 hr.new {
@@ -59,7 +63,7 @@ hr.new {
 	height: 1px;
 	visibility: visible;
 	border: none;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.623);
+	border-bottom: 1px solid rgba(247, 247, 247, 0.906);
 }
 
 .intro
@@ -92,23 +96,22 @@ hr.new {
 
 #colorchange {
 	color: black;
-    /* font-family: 'Roboto', sans-serif; */
-    font-family: Arial, sans-serif;
-    font-weight: 100;
-    letter-spacing: 0.6px;
+    font-family: Inter, sans-serif;
+    /* font-weight: 100; */
+    letter-spacing: 50%;
 }  
 
 p.block, ul, p.music
 {
-    color: black;
-    font-family: Arial, sans-serif;
+    color: #ebebeb;
+    font-family: Inter, sans-serif;
     font-size: 70;
     line-height: 160%;
-    transform:scale(1,0.97);
+    transform:scale(1,0.94);
 }
 
 a.nounderline {
-    color: inherit;
+    color: #ebebeb;
     border-bottom-style: none;
 }
 
@@ -126,12 +129,12 @@ a.link:hover
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition:.5s;
-    color: #000;
+    color: #ebebeb;
 }
 
 /*LINE*/
 
-hr
+/* hr
 {
   margin-top: 17px;
   margin-bottom: 17px;
@@ -139,8 +142,8 @@ hr
   border-width: 0px;
   width: 100%;
   position: relative;
-  background-color: black;
-}
+  background-color: #fff;
+} */
 
 /* LINKS */
 
