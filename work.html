@@ -14,51 +14,11 @@
 
     <body>
 
-        <!-- for use with toggle -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-        <script>
-            var myApiKey = secrets.apiKey;
-            var myUsername = secrets.username;
-            
-            const request = new XMLHttpRequest();
-
-            request.open('GET', 'http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user='+myUsername+'&api_key='+myApiKey+'&format=json');
-            request.send(); 
-            
-            request.onload = () => {
-                if (request.status === 200) {
-                    console.log("success"); 
-                
-                    //Extracting data
-                    var song = JSON.parse(request.response).recenttracks.track[0].name;
-                    var artist = JSON.parse(request.response).recenttracks.track[0].artist["#text"];
-
-                    var playing;
-                    if (JSON.parse(request.response).recenttracks.track[0]["@attr"]) playing = true;
-                    else playing = false;
-                    if (playing) {
-                        document.getElementById("songContainer").style.display = "block"; 
-                    }
-                    else {
-                        document.getElementById("songContainer").style.display = "none";
-                    }
-                    
-                    document.getElementById("mySong").innerHTML = song;
-                    document.getElementById("myArtist").innerHTML = artist;
-                } 
-            };
-            
-            request.onerror = () => {
-                console.log("error")
-            };
-        </script>
-
         <div class = "container">
             <div class = "links">
                 <p class = "block_left">
-                    <a class = internallink href = "index.html">• Home</a> <br>
-                    <a class = internallink href = "work.html">Work</a>
+                    <a class = internallink href = "index.html">Home</a> <br>
+                    <a class = internallink href = "work.html">• Work</a>
                 </p>
             </div>
             <div class = "intro">
@@ -120,53 +80,39 @@
                     </h1>
                 </div>
 
-                    <!-- BEGIN DESCRIPTION -->
-
-                    <p class = "block">Hi, I'm Sophie (she/her)! I'm a student at UC Santa Barbara, where I'm 
-                        working towards a computer science major and a history minor. 
-                        Lately, I've been wfh out of Los Angeles, CA.</p>
-
-                    <p class = "block">Here's my <a class = link target = "_blank" href = "resume.pdf">resume</a>.
-                        <!-- <a class = link href="bookshelf.html" target="_self">bookshelf</a>). -->
-                    </p>
-
-                    <p class = "block">Over the past year, I've worked with my team in the 
-                        <a class = link target = "_blank" href = "http://nlp.cs.ucsb.edu/">UCSB NLP Group</a> on
-                        issues within the realm of computational social science. Our interests have gone from linguistic diversity,
-                        to dialect performance in NLG, to measuring compound societal biases. You can see a sample of our work from EMNLP 2020 
-                        <a class = link target = "_blank" href = "https://www.aclweb.org/anthology/2020.emnlp-main.473/">here</a>.</p>
-
-                    <p class = "block">I also work to support women in STEM as the External VP of
-                        <a class = link target = "_blank" href = "https://ucsbswe.weebly.com/">UCSB's Society of Women Engineers</a>. I connect 
-                        our members with opportunities in industry and am the lead coordinator for our Evening with Industry, 
-                        an annual networking event that brings together 100+ students and company representatives. 
+                    <h2>Work</h2>
 
                     <p class = "block">
-                        <span id = "songContainer">Right now, I'm listening to 
-                            <a class = link target = "_blank" href = "https://open.spotify.com/user/sophiegroenwold">
-                                <span id = "mySong"></span>&nbsp;by&nbsp;<span id = "myArtist"></span>
-                            </a>
-                            <img class = "music" src="images/music_white.gif" alt="musicGif"/>
-                        </span>
-                    </p>
-
-
-                    <p class = "block">
-                    In my free time, I dance (I was a ballet dancer for 10+ years!) and read memoirs, historical fiction, and crime novels
-                        (or more accurately, add those books to my bookshelf). 
+                        <i>Twitter</i><br>
+                        I'm currently a software engineer intern at Twitter.
                     </p>
 
                     <p class = "block">
-                        If you've read this far, reach out to say hello!
+                        <i>UCSB Natural Language Processing Group</i><br>
+                        Cute tagline.
                     </p>
+
+                    <p class = "block">
+                        <i>Guardian</i><br>
+                        Cute tagline.
+                    </p>
+
+                    <h2>Projects</h2>
+
+                    <p class = "block">
+                        <i><a class = internallink target="_blank" href = "https://redditometer.herokuapp.com">Redditometer</a></i> →<br>
+                        An web app that uses NLP tools to rate the toxicity of subreddits.
+                    </p>
+
+                    <h2>Extras</h2>
+
+                    <p class = "block">
+                        <i>UCSB Society of Women Engineers</i><br>
+                        Cute tagline.
+                    </p>
+
             </div>
         </div>
-
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $('#songContainer').hide();
-            });
-        </script>
 
     </body>
 </html>

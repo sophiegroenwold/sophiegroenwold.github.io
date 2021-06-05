@@ -23,9 +23,12 @@ h1
 
 h2
 {
+    padding-top: 2%;
     font-weight: 100;
     font-size: larger;
     letter-spacing: 0.6px;
+    font-family: Inter, sans-serif;
+    color: #ebebeb;
 }
 
 #songPlaying 
@@ -51,9 +54,14 @@ h2
 	/* height: 100%; */
 	margin-bottom: 10%;
     display: flex;
-    align-items: center;
     justify-content: center;
     animation: fadeInAnimation ease 1s;
+}
+
+.links
+{
+    padding-right: 5%;
+    padding-top: 77px;
 }
 
 hr.new {
@@ -79,7 +87,6 @@ hr.new {
     float: right;
 }
 
-
 .linksContainer1, .linksContainer2, .linksContainer3, .linksContainer4
 {
     width: 35px;
@@ -99,6 +106,7 @@ hr.new {
     font-family: Inter, sans-serif;
     /* font-weight: 100; */
     letter-spacing: 50%;
+    height: 50px;
 }  
 
 p.block, ul, p.music
@@ -108,6 +116,16 @@ p.block, ul, p.music
     font-size: 70;
     line-height: 160%;
     transform:scale(1,0.94);
+}
+
+p.block_left
+{
+    color: #ebebeb;
+    font-family: Inter, sans-serif;
+    font-size: 70;
+    line-height: 160%;
+    transform:scale(1,0.94);
+    text-align: right;
 }
 
 a.nounderline {
@@ -130,6 +148,23 @@ a.link:hover
     -webkit-transition:.5s;
     transition:.5s;
     color: #ebebeb;
+}
+
+a.internallink
+{
+    color: inherit; 
+    text-decoration: none;
+    color: #ebebeb;
+}
+
+a.internallink:hover
+{
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+    color: #aaaaf3;
 }
 
 /*LINE*/
