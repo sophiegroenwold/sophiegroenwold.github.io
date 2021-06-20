@@ -4,7 +4,6 @@ body {
     padding: 0;
     max-height: 70%;
     background-color: #282c34;
-    /* background-color: white; */
 }
 
 @keyframes fadeInAnimation { 
@@ -24,11 +23,12 @@ h1
 h2
 {
     padding-top: 2%;
-    font-weight: 100;
-    font-size: larger;
+    font-size: largest;
     letter-spacing: 0.6px;
     font-family: Inter, sans-serif;
     color: #ebebeb;
+    text-decoration: underline;
+    /* border-bottom: 1px solid #fff; */
 }
 
 #songPlaying 
@@ -50,8 +50,7 @@ h2
 .container
 {
     width: 100%;
-    margin-top: 5%;
-	/* height: 100%; */
+    margin-top: 7%;
 	margin-bottom: 10%;
     display: flex;
     justify-content: center;
@@ -61,7 +60,7 @@ h2
 .links
 {
     padding-right: 5%;
-    padding-top: 77px;
+    padding-top: 82px;
 }
 
 hr.new {
@@ -77,23 +76,18 @@ hr.new {
 .intro
 {
     width: 575px;
-    /* align-content: center; */
 }
 
 .container2
 {
     width: 140px;
     display: flex;
-    float: right;
+    float: left;
 }
 
 .linksContainer1, .linksContainer2, .linksContainer3, .linksContainer4
 {
     width: 35px;
-    /* height: 10px; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* float: left; */
 }
 
 .highlight:hover
@@ -126,6 +120,17 @@ p.block_left
     line-height: 160%;
     transform:scale(1,0.94);
     text-align: right;
+}
+
+p.big
+{
+    padding-top: 3%;
+    padding-bottom: 1%;
+    color: #ebebeb;
+    font-family: Inter, sans-serif;
+    font-size: 150%;
+    line-height: 140%;
+    transform:scale(1,0.94);
 }
 
 a.nounderline {
@@ -167,20 +172,7 @@ a.internallink:hover
     color: #aaaaf3;
 }
 
-/*LINE*/
-
-/* hr
-{
-  margin-top: 17px;
-  margin-bottom: 17px;
-  height: 1px;
-  border-width: 0px;
-  width: 100%;
-  position: relative;
-  background-color: #fff;
-} */
-
-/* LINKS */
+/* SOCIAL LINKS */
 
 #crossFade
 {
