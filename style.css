@@ -3,7 +3,9 @@ body {
 	margin: 0;
     padding: 0;
     max-height: 70%;
-    background-color: #282c34;
+    background-color: #fafaf8;
+    font-weight: 300;
+    font-family: Inter, sans-serif;
 }
 
 @keyframes fadeInAnimation { 
@@ -22,13 +24,35 @@ h1
 
 h2
 {
-    padding-top: 2%;
-    font-size: largest;
-    letter-spacing: 0.6px;
-    font-family: Inter, sans-serif;
-    color: #ebebeb;
-    text-decoration: underline;
-    /* border-bottom: 1px solid #fff; */
+    font-size: 175%;
+    color: #111111;
+    margin-bottom: 6px;
+}
+
+h3
+{
+    font-size: 100%;
+    margin-top: 0;
+}
+
+h4
+{
+    font-size: 150%;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+h5
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 100%;
+}
+
+.links {
+    margin-top: 30px;
+    display: flex;
+    gap: 24px;
 }
 
 #songPlaying 
@@ -50,17 +74,11 @@ h2
 .container
 {
     width: 100%;
-    margin-top: 7%;
-	margin-bottom: 10%;
+    padding-top: 7%;
+	padding-bottom: 7%;
     display: flex;
     justify-content: center;
     animation: fadeInAnimation ease 1s;
-}
-
-.links
-{
-    padding-right: 5%;
-    padding-top: 82px;
 }
 
 hr.new {
@@ -75,7 +93,7 @@ hr.new {
 
 .intro
 {
-    width: 575px;
+    width: 50%;
 }
 
 .container2
@@ -85,11 +103,6 @@ hr.new {
     float: left;
 }
 
-.linksContainer1, .linksContainer2, .linksContainer3, .linksContainer4
-{
-    width: 35px;
-}
-
 .highlight:hover
 {
     color: #000;
@@ -97,28 +110,23 @@ hr.new {
 
 #colorchange {
 	color: black;
-    font-family: Inter, sans-serif;
-    /* font-weight: 100; */
     letter-spacing: 50%;
     height: 50px;
 }  
 
 p.block, ul, p.music
 {
-    color: #ebebeb;
-    font-family: Inter, sans-serif;
+    color: #111111;
     font-size: 70;
     line-height: 160%;
-    transform:scale(1,0.94);
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 p.block_left
 {
-    color: #ebebeb;
-    font-family: Inter, sans-serif;
-    font-size: 70;
+    color: #111111;
     line-height: 160%;
-    transform:scale(1,0.94);
     text-align: right;
 }
 
@@ -126,23 +134,20 @@ p.big
 {
     padding-top: 3%;
     padding-bottom: 1%;
-    color: #ebebeb;
-    font-family: Inter, sans-serif;
+    color: #111111;
     font-size: 150%;
     line-height: 140%;
-    transform:scale(1,0.94);
 }
 
 a.nounderline {
-    color: #ebebeb;
+    color: #111111;
     border-bottom-style: none;
 }
 
 a { 
     color: inherit; 
     text-decoration: none;
-    /* border-bottom: 1px solid #D1D0D1; */
-    color: #aaaaf3;
+    color: #4FA6A3;
 }
 
 a.link:hover
@@ -152,14 +157,14 @@ a.link:hover
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition:.5s;
-    color: #ebebeb;
+    color: #111111;
 }
 
 a.internallink
 {
     color: inherit; 
     text-decoration: none;
-    color: #ebebeb;
+    color: #111111;
 }
 
 a.internallink:hover
@@ -170,45 +175,4 @@ a.internallink:hover
     -webkit-transition:.5s;
     transition:.5s;
     color: #aaaaf3;
-}
-
-/* SOCIAL LINKS */
-
-#crossFade
-{
-  position: relative;
-  margin: 0 auto;
-}
-
-#crossFade img
-{
-  position: absolute;
-  left:0;
-}
-
-#crossFade img.top:hover {
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s;
-	opacity:0;
-}
-
-#crossFade a.bottom:link {
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s;
-	opacity:0;
-}
-
-#crossFade a.bottom:hover {
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s;
-	opacity:100;
 }
